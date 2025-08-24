@@ -1,7 +1,6 @@
-package com.projectpedro.gamelistbackend;
+package com.projectpedro.gamelistbackend.entities;
 
 import jakarta.persistence.*;
-import org.springframework.boot.autoconfigure.web.WebProperties;
 
 import java.util.Objects;
 
@@ -20,7 +19,7 @@ public class Game {
     private String platform;
     private Double score;
     private String imgUrl;
-    
+
     @Column (columnDefinition = "TEXT")
     private String shortDescription;
 
